@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f69ca3a4">
+
+    <LinearLayout
+        android:id="@+id/ll_contact"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#00BCD4"
+            android:text="John Doe"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#00BCD4"
+            android:text="9000154315"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="#00BCD4"
+            android:text="Mumbai"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:layout_below="@+id/ll_contact">
+
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:text="Project Planning"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+
+            />
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/eye" />
+
+
+        <CheckBox
+            android:id="@+id/chk"
+            android:button="@drawable/custom_drawable_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
