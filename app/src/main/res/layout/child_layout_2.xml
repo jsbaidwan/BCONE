@@ -2,46 +2,254 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f69ca3a4">
+    android:background="#f6f2f2f2">
 
     <LinearLayout
-        android:id="@+id/ll_contact"
+        android:id="@+id/ll_contact_1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:background="#04a3b7">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user"
+            />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="#00BCD4"
+            android:padding="2dp"
             android:text="John Doe"
             android:textColor="#FFFFFF"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/phone"
             />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="#00BCD4"
+            android:padding="2dp"
             android:text="9000154315"
             android:textColor="#FFFFFF"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/location"
             />
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="#00BCD4"
+            android:padding="2dp"
             android:text="Mumbai"
             android:textColor="#FFFFFF"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_weight="1"
             />
     </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_audit_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_contact_1"
+            android:padding="10dp"
+            android:background="#027e8e"
+            android:text="Items Audit Sheet"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_audit_sheet"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="I"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#f5c24b"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="T"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#ef7f39"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="E"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#69a439"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="M"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#4bdcf5"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="S"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:background="#1366d2"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item">
+
+            <TextView
+                android:id="@+id/front_office"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f6c6c6c6"
+                android:text="Front Office"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                />
+
+        <LinearLayout
+            android:id="@+id/front_office_list_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/front_office"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Colour Scheme:"
+                android:textSize="16sp"
+                android:layout_weight="3"/>
+            <Button
+                android:id="@+id/audit_now"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Audit Now"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="#646464"
+                android:layout_weight="2"/>
+            <CheckBox
+                android:id="@+id/ch"
+                android:button="@drawable/custom_drawable_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:background="#f6f2f2f2"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:layout_weight="1"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/front_office_list_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/front_office_list_1"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Furniture / Fixtures"
+                android:textSize="16sp"
+                android:layout_weight="3"/>
+            <Button
+                android:id="@+id/audit_now"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Audit Now"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="#646464"
+                android:layout_weight="2"/>
+            <CheckBox
+                android:id="@+id/ch"
+                android:button="@drawable/custom_drawable_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:background="#f6f2f2f2"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/front_office_list_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/front_office_list_2"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pantry:"
+                android:textSize="16sp"
+                android:layout_weight="3"/>
+            <Button
+                android:id="@+id/audit_now"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="Audit Now"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:background="#646464"
+                android:layout_weight="2"/>
+            <CheckBox
+                android:id="@+id/ch"
+                android:button="@drawable/custom_drawable_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="37dp"
+                android:background="#f6f2f2f2"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
