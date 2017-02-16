@@ -71,5 +71,6 @@
             android:textAllCaps="false"
             android:textSize="20sp"
             android:background="#FDD835"
-            android:layout_margin="8dp"/>
+            android:layout_margin="8dp"
+            />
 </LinearLayout>
